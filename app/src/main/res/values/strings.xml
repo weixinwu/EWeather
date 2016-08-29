@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">EWeather</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="icon_array">
+        <item>clear-day</item>
+        <item>lear-night</item>
+        <item>cloudy</item>
+        <item>cloudy-night</item>
+        <item>cloudy</item>
+        <item>fog-night</item>
+        <item>fog</item>
+        <item>partly-cloudy-day</item>
+        <item>partly-cloudy-night</item>
+        <item>rain-night</item>
+        <item>rain</item>
+        <item>sleet-night</item>
+        <item>sleet</item>
+        <item>snow-night</item>
+        <item>snow</item>
+        <item>weather_na</item>
+        <item>wind-night</item>
+        <item>wind</item><item>cloudy</item>
+
+
+    </string-array>
+
+
+</resources>

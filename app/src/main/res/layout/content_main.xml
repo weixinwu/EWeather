@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.wuwei.eweather.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchbar_autocomplete"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:elevation="10dp"
+        android:backgroundTint="#01BE9E"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="Day"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_day"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_day"
+                android:id="@+id/imageview_day_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f3f3f3"
+                android:textSize="42sp"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="10dp"
+                android:layout_below="@+id/textview_day"
+                android:id="@+id/textview_day_temp"
+                android:layout_marginStart="42dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_night"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:elevation="3dp"
+        card_view:theme="@style/Widget.AppCompat.SearchView"
+        android:backgroundTint="#22455B"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="Night"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_night"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageview_night_icon"
+                android:layout_below="@+id/textview_night"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_night"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:id="@+id/textview_night_temp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</RelativeLayout>
